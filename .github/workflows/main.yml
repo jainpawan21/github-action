@@ -26,5 +26,8 @@ jobs:
         username: ${{secrets.USERNAME}}
         port: 22
         script: |
-          whoami
-          pwd
+          /home/jainpawan21/projects/github-action
+          git pull
+          npm install
+          npm run build
+          npm start
