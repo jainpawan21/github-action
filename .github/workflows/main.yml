@@ -22,7 +22,7 @@ jobs:
     - uses: appleboy/ssh-action@v0.1.3
       with: 
         host: ${{secrets.HOSTNAME}}
-        key: ${{secrets.SSH_PUBLIC_KEY}}
+        key: ${{secrets.SSH_PRIVATE_KEY}}
         username: ${{secrets.USERNAME}}
         port: 22
     # Runs a set of commands using the runners shell
